@@ -1,7 +1,10 @@
 import axios from 'axios';
 
+// Fijamos la URL del backend en Render (incluyendo /api al final)
+const API_URL = 'https://whatsapp-clone-backend-qcw9.onrender.com/api';
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  baseURL: API_URL,
   withCredentials: true
 });
 

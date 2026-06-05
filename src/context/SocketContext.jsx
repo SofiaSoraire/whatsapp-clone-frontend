@@ -13,7 +13,8 @@ export const SocketProvider = ({ children }) => {
   useEffect(() => {
     if (!user) return;
     const token = localStorage.getItem('token');
-    const newSocket = io(import.meta.env.VITE_SOCKET_URL || 'http://localhost:5001', {
+    const SOCKET_URL = 'https://whatsapp-clone-backend-qcw9.onrender.com';
+    const newSocket = io(SOCKET_URL, {
       auth: { token }
     });
     setSocket(newSocket);

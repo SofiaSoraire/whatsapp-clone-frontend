@@ -25,6 +25,7 @@ function App() {
             <Route path="/chat/:chatId" element={<PrivateRoute><ChatRoom /></PrivateRoute>} />
             <Route path="/group/:groupId/settings" element={<PrivateRoute><GroupSettings /></PrivateRoute>} />
             <Route path="/profile" element={<PrivateRoute><ProfileEditor /></PrivateRoute>} />
+            <Route path="/join" element={<PrivateRoute><JoinGroup /></PrivateRoute>} />
           </Routes>
         </SocketProvider>
       </AuthProvider>

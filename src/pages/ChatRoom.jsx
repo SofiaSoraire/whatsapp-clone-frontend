@@ -45,7 +45,7 @@ export default function ChatRoom() {
   useEffect(() => {
     fetchMessages();
     fetchChatInfo();
-    const interval = setInterval(fetchMessages, 3000);
+    const interval = setInterval(fetchMessages, 5000);
     return () => clearInterval(interval);
   }, [chatId]);
 

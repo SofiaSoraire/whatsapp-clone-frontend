@@ -1,4 +1,9 @@
 {
+  "installCommand": "npm install --no-optional",
+  "buildCommand": "npx vite build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "devCommand": "npm run dev",
   "rewrites": [
     {
       "source": "/(.*)",

@@ -10,6 +10,7 @@ import ChatRoom from './pages/ChatRoom';
 import GroupSettings from './pages/GroupSettings';
 import PrivateRoute from './components/PrivateRoute';
 import ProfileEditor from './pages/ProfileEditor';
+import JoinGroup from './pages/JoinGroup';
 
 function App() {
   return (

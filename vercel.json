@@ -1,5 +1,5 @@
 {
-  "installCommand": "npm install",
+  "installCommand": "npm install && npm install -g esbuild@0.21.0",
   "buildCommand": "npx vite build",
   "outputDirectory": "dist",
   "framework": "vite",

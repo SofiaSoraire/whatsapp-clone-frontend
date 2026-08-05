@@ -32,12 +32,11 @@ export default function GroupSettings() {
     }
   };
 
-  const copyInviteLink = () => {
-    const link = `${window.location.origin}/join?code=${inviteCode}`;
+  const copyInvite = () => {
+    const link = `${window.location.origin}/join?code=${group.inviteCode}`;
     navigator.clipboard.writeText(link);
-    setMessage('Enlace de invitación copiado al portapapeles');
-    setTimeout(() => setMessage(''), 3000);
-  };
+    alert('Enlace copiado al portapapeles');
+};
 
   const promoteToAdmin = async (userId) => {
     try {
